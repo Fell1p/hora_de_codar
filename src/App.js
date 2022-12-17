@@ -1,4 +1,5 @@
 import './App.css';
+import HellWord from './components/HelloWord';
 
 function App() {
   const name = 'Felipe'
@@ -16,6 +17,7 @@ function App() {
       <p>Olá, {newName}</p>
       <p>Soma: {sum(1, 2)}</p>
       <img src={url} alt="Minha Imagem" />
+      <HellWord />
     </div>
   );
 }
