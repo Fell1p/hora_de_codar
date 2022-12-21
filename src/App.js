@@ -1,23 +1,18 @@
 import './App.css';
 import HellWord from './components/HelloWord';
+import SayMyName from './components/SayMyName';
+import Pessoa from './components/Pessoa';
 
 function App() {
-  const name = 'Felipe'
-  const newName = name.toUpperCase()
 
-  function sum(a, b){
-    return a + b
-  }
+  const nome = "Dani"
 
-  const url = 'https://via.placeholder.com/150'
+  return ( //nome utilizada a props crianda em SayMyName para utilizar sua propriedade e assim tornar o arquivo dinamico
 
-  return (
     <div className="App">
-      <h1>Olá</h1>
-      <p>Olá, {newName}</p>
-      <p>Soma: {sum(1, 2)}</p>
-      <img src={url} alt="Minha Imagem" />
-      <HellWord />
+      <SayMyName nome="Felipe"/> 
+      <SayMyName nome={nome}/>
+      <Pessoa nome="Felipe" idade="27" profissao="Analista" foto="https://via.placeholder.com/150" />
     </div>
   );
 }

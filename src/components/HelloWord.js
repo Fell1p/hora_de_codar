@@ -1,6 +1,6 @@
 import Frase from "./Frase"
 
-function HellWord(){
+export default function HellWord(){
 
     return(
         <div>
@@ -12,5 +12,3 @@ function HellWord(){
     )
 
 }
-
-export default HellWord
