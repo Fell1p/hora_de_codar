@@ -1,4 +1,4 @@
-import Frase from "./Frase"
+import Frase from "./Frase/index.js";
 
 export default function HellWord(){
 

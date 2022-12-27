@@ -1,5 +1,6 @@
 body {
   padding: 50px;
+  padding-bottom: 500px;
   background-color: #efefef;
 }
 
@@ -9,4 +10,5 @@ hi {
 
 p{
   background-color: #9f9f9f;
+  padding: 10px;
 }

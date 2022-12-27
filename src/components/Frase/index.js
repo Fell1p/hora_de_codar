@@ -1,9 +1,10 @@
+import React from 'react';
 import styles from './Frase.modules.css';
 
 export default function Frase() {
     return(
         <div className={styles.fraseContainer} >
-            <p className={styles.fraseContent}>Este é um componente com uma frase</p>
+            <p className={styles.fraseContent} >Este é um componente com uma frase!</p>
         </div>
     )
 }
