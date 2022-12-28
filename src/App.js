@@ -1,10 +1,12 @@
+// Arquivo JSX responsavel por organizar, reaproveitar e reindenizar o componentes
+
 import './App.css';
 import SayMyName from './components/SayMyName';
 import Pessoa from './components/Pessoa';
 import Frase from './components/Frase/index.js';
 import List from './components/List';
 
-function App() {
+function App() { //Componente responsavel pela reindenização dos componentes que compoem a aplicação
 
   const nome = "Dani"
 
