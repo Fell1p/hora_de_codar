@@ -1,7 +1,25 @@
-export default function Item(props){ 
+/*Aplicação do conceito de props onde a propriedade é utilizada no componente list*/ 
+
+import PropTypes from 'prop-types';
+
+function Item({marca, ano_lancamento}){ 
     return(
         <>
-            <li>{props.marca /*Aplicação do conceito de props onde a propriedade é utilizada no componente list*/ }</li>
+            <li>
+                {marca} - {ano_lancamento}
+            </li>
         </>
     )
 }
+
+Item.propTypes = {
+    marca: PropTypes.string.isRequired,
+    ano_lancamento: PropTypes.number.isRequired,
+}
+
+Item.defaultProps = { 
+    marca: 'Faltou a marca',
+    ano_lancamento: 0,
+}
+
+export default Item

@@ -5,9 +5,9 @@ export default function List(){
         <>
             <h1>Minha Lista</h1>
             <ul>
-                <Item marca="Dor" /*marca é a props itilizada no componente item*//>
-                <Item marca="Amor" />
-                <Item marca="Paixão" />
+                <Item marca="Ferrari" ano_lancamento={1995}/*marca é a props itilizada no componente item*//>
+                <Item marca="Ford" ano_lancamento={2000} />
+                <Item marca="Fiat" ano_lancamento={2006} />
             </ul>
         </>
     )
