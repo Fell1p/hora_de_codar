@@ -3,6 +3,7 @@
 import './App.css';
 import Evento from './components/Eventos'
 import Form from './components/Form';
+import Media from './components/Media';
 
 function App() { //Componente responsavel pela reindenização dos componentes que compoem a aplicação
 
@@ -13,6 +14,7 @@ function App() { //Componente responsavel pela reindenização dos componentes q
       <Evento numero = '1' /> 
       <Evento numero = '2' />
       <Form />
+      <Media />
     </div>
   );
 }
