@@ -3,7 +3,7 @@ import { useState } from 'react'
 export default function Form(){
 
     function cadastrarUsuario(e){
-        e.preventDefault()
+        e.preventDefault()// esta função é utilizada para submeter meu formulario e não perder os dados
         console.log(`Usuario ${name} foi cadastrado com a senha: ${password}`)
     }
 
