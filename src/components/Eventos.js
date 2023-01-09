@@ -17,7 +17,7 @@ export default function Evento() {
     return (
         <div>
             <p>Clique aqui para ativar</p>
-            <Button event={meuEvento} text="Primeiro Evento" />
+            <Button event={meuEvento} text="Primeiro" />
             <Button event={segundoEvento} text="Segundo Evento" />
         </div>
     )
