@@ -2,7 +2,7 @@
 
 import PropTypes from 'prop-types';
 
-function Item({marca, ano_lancamento}){ 
+export default function Item({marca, ano_lancamento}){ 
     return(
         <>
             <li>
@@ -21,5 +21,3 @@ Item.defaultProps = {
     marca: 'Faltou a marca',
     ano_lancamento: 0,
 }
-
-export default Item
