@@ -4,11 +4,12 @@ body {
   background-color: #efefef;
 }
 
-hi {
+h1 {
   color: #333;
 }
 
 p{
   background-color: #9f9f9f;
   padding: 10px;
+  margin-top 10%;
 }
