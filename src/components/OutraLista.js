@@ -2,9 +2,12 @@ export default function OutraLista({ itens }) {
     return (
         <>
             <h3>Lista de coisas boas:</h3>
-            {itens.map((item) => (
-                <p>{item}</p>
-            ))}            
+            {itens.length > 0 ? (
+                itens.map((item) => (
+                <p key={index}>{item}</p>
+            ))) : (
+                <p>Não há itens na lista</p>
+            )}            
         </>
     )
 }
