@@ -18,8 +18,8 @@ export default function Form(){
                     <label htmlFor="name">Nome: </label>
                     <input 
                         type="text" 
-                        id="name" n
-                        ame="name" 
+                        id="name"
+                        name="name" 
                         placeholder="Digite o seu nome" 
                         onChange={(e) => setName(e.target.value)}
                     />

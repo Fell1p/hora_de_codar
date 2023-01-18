@@ -11,4 +11,4 @@ function SeuNome({ setNome }){
     )
 }
 
-export default SeuNome()
+export default SeuNome
