@@ -11,7 +11,7 @@ export default function Form(){
     const [password, setPassword] = useState()
 
     return (
-        <div>
+        <div> 
             <h1>Meu cadastro: </h1>
             <form onSubmit={cadastrarUsuario}>
                 <div>
@@ -23,7 +23,7 @@ export default function Form(){
                         placeholder="Digite o seu nome" 
                         onChange={(e) => setName(e.target.value)}
                     />
-                </div>
+                </div> 
                 <div>
                     <label htmlFor="password">Senha: </label>
                     <input 
@@ -33,7 +33,7 @@ export default function Form(){
                         placeholder="Digite sua senha" 
                         onChange={(e) => setPassword(e.target.value)}
                     />
-                </div>
+                </div> 
                 <div>
                     <input type="submit" value="cadastrar" />
                 </div>

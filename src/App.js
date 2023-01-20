@@ -1,6 +1,7 @@
-// Arquivo JSX responsavel por organizar, reaproveitar e reindenizar o componentes
+ // Arquivo JSX responsavel por organizar, reaproveitar e reindenizar o componentes
 import {useState} from 'react';
 import './App.css';
+import Saudacao from './components/Saudacao';
 import SeuNome from './components/SeuNome'
 
 function App() { //Componente responsavel pela reindenização dos componentes que compoem a aplicação
@@ -12,7 +13,7 @@ function App() { //Componente responsavel pela reindenização dos componentes q
     <div className="App">
       <h1>State Lift</h1>
       <SeuNome setNome={setNome} />
-      {nome}
+      <Saudacao nome={nome} />
     </div>
   );
 }
