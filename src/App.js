@@ -1,21 +1,29 @@
  // Arquivo JSX responsavel por organizar, reaproveitar e reindenizar o componentes
-import {useState} from 'react';
-import './App.css';
-import Saudacao from './components/Saudacao';
-import SeuNome from './components/SeuNome'
+import {
+  BrowserRouter as Router, 
+  Routes, 
+  Route, 
+} from 'react-router-dom';
+import Home from "./components/pages/Home";
+import Empresa from "./components/pages/Empresa";
+import Contato from "./components/pages/Contato";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+
 
 function App() { //Componente responsavel pela reindenização dos componentes que compoem a aplicação
 
-  const [nome, setNome] = useState()
-
-  return ( //nome utilizada a props crianda em SayMyName para utilizar sua propriedade e assim tornar o arquivo dinamico
-
-    <div className="App">
-      <h1>State Lift</h1>
-      <SeuNome setNome={setNome} />
-      <Saudacao nome={nome} />
-    </div>
-  );
+  return ( 
+    <Router>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Empresa" element={<Empresa />} />
+      <Route path="/Contato" element={<Contato />} />
+    </Routes>
+    <Footer />
+  </Router>
+  )    
 }
 
 export default App;
